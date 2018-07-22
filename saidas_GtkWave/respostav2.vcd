@@ -1,0 +1,75 @@
+$date
+  Thu Jul 19 08:51:19 2018
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 1 ! test_a $end
+$var reg 1 " test_b $end
+$var reg 1 # test_cin $end
+$var reg 3 $ test_s[2:0] $end
+$var reg 1 % test_f $end
+$var reg 1 & test_cout $end
+$scope module uut $end
+$var reg 1 ' a $end
+$var reg 1 ( b $end
+$var reg 3 ) s[2:0] $end
+$var reg 1 * cin $end
+$var reg 1 + f $end
+$var reg 1 , cout $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+0"
+0#
+b000 $
+0%
+U&
+0'
+0(
+b000 )
+0*
+0+
+U,
+#200000000
+b001 $
+1%
+b001 )
+1+
+#400000000
+b010 $
+0%
+b010 )
+0+
+#600000000
+b011 $
+1%
+b011 )
+1+
+#800000000
+b100 $
+0%
+0&
+b100 )
+0+
+0,
+#1000000000
+b101 $
+1%
+b101 )
+1+
+#1200000000
+b110 $
+0%
+b110 )
+0+
+#1400000000
+b111 $
+1%
+b111 )
+1+
+#1600000000
