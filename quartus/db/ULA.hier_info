@@ -1,0 +1,128 @@
+|ULA
+SW[0] => ula_1bit:U1.SW[0]
+SW[0] => ula_1bit:U2.SW[0]
+SW[0] => ula_1bit:U3.SW[0]
+SW[1] => ula_1bit:U1.SW[1]
+SW[1] => ula_1bit:U2.SW[1]
+SW[1] => ula_1bit:U3.SW[1]
+SW[2] => ula_1bit:U1.SW[2]
+SW[2] => ula_1bit:U2.SW[2]
+SW[2] => ula_1bit:U3.SW[2]
+SW[3] => ula_1bit:U1.SW[4]
+SW[4] => ula_1bit:U2.SW[4]
+SW[5] => ula_1bit:U3.SW[4]
+SW[6] => ula_1bit:U1.SW[3]
+SW[7] => ula_1bit:U2.SW[3]
+SW[8] => ula_1bit:U3.SW[3]
+SW[9] => ula_1bit:U1.SW[5]
+LEDR[0] <= ula_1bit:U1.LEDR[0]
+LEDR[1] <= ula_1bit:U2.LEDR[0]
+LEDR[2] <= ula_1bit:U3.LEDR[0]
+LEDR[3] <= ula_1bit:U3.LEDR[1]
+
+
+|ULA|ula_1bit:U1
+SW[0] => Mux0.IN10
+SW[0] => Mux1.IN10
+SW[1] => Mux0.IN9
+SW[1] => Mux1.IN9
+SW[2] => Mux0.IN8
+SW[2] => Mux1.IN8
+SW[3] => LEDR.IN0
+SW[3] => LEDR.IN0
+SW[3] => LEDR.IN0
+SW[3] => LEDR.IN0
+SW[3] => LEDR.IN0
+SW[4] => LEDR.IN1
+SW[4] => LEDR.IN0
+SW[4] => LEDR.IN0
+SW[4] => LEDR.IN1
+SW[4] => LEDR.IN1
+SW[4] => Mux1.IN7
+SW[4] => LEDR.IN1
+SW[4] => LEDR.IN1
+SW[4] => LEDR.IN0
+SW[4] => LEDR.IN0
+SW[4] => Mux1.IN6
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+LEDR[0] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|ula_1bit:U2
+SW[0] => Mux0.IN10
+SW[0] => Mux1.IN10
+SW[1] => Mux0.IN9
+SW[1] => Mux1.IN9
+SW[2] => Mux0.IN8
+SW[2] => Mux1.IN8
+SW[3] => LEDR.IN0
+SW[3] => LEDR.IN0
+SW[3] => LEDR.IN0
+SW[3] => LEDR.IN0
+SW[3] => LEDR.IN0
+SW[4] => LEDR.IN1
+SW[4] => LEDR.IN0
+SW[4] => LEDR.IN0
+SW[4] => LEDR.IN1
+SW[4] => LEDR.IN1
+SW[4] => Mux1.IN7
+SW[4] => LEDR.IN1
+SW[4] => LEDR.IN1
+SW[4] => LEDR.IN0
+SW[4] => LEDR.IN0
+SW[4] => Mux1.IN6
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+LEDR[0] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|ula_1bit:U3
+SW[0] => Mux0.IN10
+SW[0] => Mux1.IN10
+SW[1] => Mux0.IN9
+SW[1] => Mux1.IN9
+SW[2] => Mux0.IN8
+SW[2] => Mux1.IN8
+SW[3] => LEDR.IN0
+SW[3] => LEDR.IN0
+SW[3] => LEDR.IN0
+SW[3] => LEDR.IN0
+SW[3] => LEDR.IN0
+SW[4] => LEDR.IN1
+SW[4] => LEDR.IN0
+SW[4] => LEDR.IN0
+SW[4] => LEDR.IN1
+SW[4] => LEDR.IN1
+SW[4] => Mux1.IN7
+SW[4] => LEDR.IN1
+SW[4] => LEDR.IN1
+SW[4] => LEDR.IN0
+SW[4] => LEDR.IN0
+SW[4] => Mux1.IN6
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+SW[5] => LEDR.IN1
+LEDR[0] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
