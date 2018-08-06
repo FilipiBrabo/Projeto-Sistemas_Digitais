@@ -35,12 +35,12 @@ entity ula_1bit is
 			when "110" => 	-- Soma de A + B + carryIn
 				LEDR(0) <= (SW(4) XOR SW(3)) XOR SW(5);
 				-- LEDR(1) <= (SW(4) AND SW(3)) OR ((SW(4) XOR SW(3)) AND SW(5));
-				LEDR(1) <= (SW(4) && SW(5)) || (SW(4) && SW(3)) || (SW(5) && SW(3))
+				LEDR(1) <= (SW(4) AND SW(5)) OR (SW(4) AND SW(3)) OR (SW(5) AND SW(3));
 
 			when "111" =>	-- Soma de B + (complemento de A) + carryIn
-				LEDR(0) <= ((NOT SW(4)) XOR SW(3)) XOR SW(5);
+				LEDR(0) <= NOT SW(4) XOR SW(3) XOR SW(5);
 				-- LEDR(1) <= NOT ((NOT SW(4)) AND SW(3)) OR (((NOT SW(4)) XOR SW(3)) AND SW(5));
-				LEDR(1) <= ((NOT SW(4)) && SW(5)) || ((NOT SW(4)) && SW(3)) || (SW(5) && SW(3))
+				LEDR(1) <= ((NOT SW(4)) AND SW(5)) OR ((NOT SW(4)) AND SW(3)) OR (SW(5) AND SW(3));
 			when others => null;
 		end case;
 	end process;
