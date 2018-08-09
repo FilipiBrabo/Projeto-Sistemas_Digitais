@@ -62,7 +62,7 @@ architecture ula_3bits_arch of ULA is
          "1111001" when others;
 		with SW(0) select
       HEX1(6 downto 0) <=
-         "1111110" when '1',
+         "0111111" when '0',
          "1111111" when others;
 		HEX2 <= "1111111";
 		HEX3 <= "1111111";
