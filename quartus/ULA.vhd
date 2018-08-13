@@ -20,7 +20,7 @@ architecture ula_3bits_arch of ULA is
 	 port(SW : in STD_LOGIC_VECTOR(5 downto 0);
 			LEDR: out STD_LOGIC_VECTOR(1 downto 0));
 	end component;
-	
+
 	begin
 		U1: ula_1bit port map(
                 SW(4) => SW(3),
@@ -47,9 +47,9 @@ architecture ula_3bits_arch of ULA is
                 LEDR(1) => overflow,
                 LEDR(0) => hex(2)
                 );
-					 
+
 		LEDR <= hex;
-		
+
 		with hex select
       HEX0(6 downto 0) <=
          "1000000" when "000",
@@ -58,19 +58,12 @@ architecture ula_3bits_arch of ULA is
          "0110000" when "011",
          "0011001" when "100",
          "0110000" when "101",
-         "0100100" when "110", 
+         "0100100" when "110",
          "1111001" when others;
-<<<<<<< HEAD
 		with hex(2) select
 			HEX1(6 downto 0) <=
 				"0111111" when '1',
 				"1111111" when others;
-=======
-		with SW(0) select
-      HEX1(6 downto 0) <=
-         "0111111" when '0',
-         "1111111" when others;
->>>>>>> b0f1e0d2b8a941ba893b2a6271938417cf4890f2
 		HEX2 <= "1111111";
 		HEX3 <= "1111111";
 end ula_3bits_arch;
