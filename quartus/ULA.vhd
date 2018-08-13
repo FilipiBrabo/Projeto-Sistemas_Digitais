@@ -32,13 +32,13 @@ architecture ula_3bits_arch of ULA is
                 );
 
 		U2: ula_1bit port map(
-								SW(4) => SW(4),
-								SW(3) => SW(7),
-								SW(5) => tmp1,
-								SW(2 downto 0) => SW(2 downto 0),
-								LEDR(1) => tmp2,
-								LEDR(0) => hex(1)
-							  );
+						SW(4) => SW(4),
+						SW(3) => SW(7),
+						SW(5) => tmp1,
+						SW(2 downto 0) => SW(2 downto 0),
+						LEDR(1) => tmp2,
+						LEDR(0) => hex(1)
+					  );
 		U3: ula_1bit port map(
                 SW(4) => SW(5),
                 SW(3) => SW(8),
@@ -60,10 +60,10 @@ architecture ula_3bits_arch of ULA is
          "0110000" when "101",
          "0100100" when "110", 
          "1111001" when others;
-		with SW(0) select
-      HEX1(6 downto 0) <=
-         "1111110" when '1',
-         "1111111" when others;
+		with hex(2) select
+			HEX1(6 downto 0) <=
+				"0111111" when '1',
+				"1111111" when others;
 		HEX2 <= "1111111";
 		HEX3 <= "1111111";
 end ula_3bits_arch;

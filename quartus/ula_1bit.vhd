@@ -4,7 +4,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity ula_1bit is
+
 	port(
 		 SW : in STD_LOGIC_VECTOR(5 downto 0);--[Cin, A, B, S2, s1, s0]
 		 LEDR : out STD_LOGIC_Vector(1 downto 0)
